@@ -1,4 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
     mousewheel: false,
     slideToClickedSlide: false,
     watchSlidesProgress: false,
