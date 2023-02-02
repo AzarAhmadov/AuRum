@@ -1,12 +1,15 @@
 var swiper = new Swiper(".mySwiper", {
     mousewheel: false,
-
+    slideToClickedSlide: false,
+    watchSlidesProgress: false,
+    noswipingClass: 'swiper-slide',
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     pagination: {
         el: ".swiper-pagination",
+        clickable: true,
     },
 });
 
@@ -58,15 +61,14 @@ var swiper2 = new Swiper(".mySwiper3", {
     },
 });
 
-var nextBtn = document.querySelector(".next");
-var prevBtn = document.querySelector(".prev");
-var slide = document.querySelectorAll(".slide-img");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+const slide = document.querySelectorAll(".slide-img");
 var i = 0;
 
 prevBtn.onclick = function () {
     slide[i].classList.remove("active");
     i--;
-
     if (i < 0) {
         i = slide.length - 1;
     }
