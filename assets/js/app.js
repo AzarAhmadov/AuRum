@@ -58,34 +58,28 @@ var swiper2 = new Swiper(".mySwiper3", {
     },
 });
 
-function slider() {
-    const next = document.querySelector('.next');
-    const prev = document.querySelector('.prev');
-    const sliderImg = document.querySelectorAll(".slide-img");
+var nextBtn = document.querySelector(".next");
+var prevBtn = document.querySelector(".prev");
+var slide = document.querySelectorAll(".slide-img");
+var i = 0;
 
-    let i = 0;
+prevBtn.onclick = function () {
+    slide[i].classList.remove("active");
+    i--;
 
-    next.addEventListener("click", () => {
-        i++;
-        if (sliderImg.length - 1 < i) {
-            i = 0;
-        }
-        sliderImg.forEach((item) => {
-            item.classList.remove("active");
-        });
-        sliderImg[i].classList.add("active");
-    });
+    if (i < 0) {
+        i = slide.length - 1;
+    }
+    slide[i].classList.add("active");
+};
 
-    prev.addEventListener("click", () => {
-        i--;
-        if (0 >= i) {
-            i = 0;
-        }
-        sliderImg.forEach((item) => {
-            item.classList.remove("active");
-        });
-        sliderImg[i].classList.add("active");
-    });
-}
+nextBtn.onclick = function () {
+    slide[i].classList.remove("active");
+    i++;
 
-slider();
+    if (i >= slide.length) {
+        i = 0;
+    }
+
+    slide[i].classList.add("active");
+};
