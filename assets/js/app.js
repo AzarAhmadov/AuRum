@@ -1,5 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
     cssMode: true,
+    noSwiping: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -7,8 +8,6 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
         el: ".swiper-pagination",
     },
-    mousewheel: false,
-    keyboard: false,
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
