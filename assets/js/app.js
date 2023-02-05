@@ -16,12 +16,7 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper2 = new Swiper(".mySwiper2", {
     slidesPerView: 3,
-    spaceBetween: 45,
-    freeMode: true,
-    pagination: {
-        el: ".swiper-pagination2",
-        clickable: true,
-    },
+    spaceBetween: 0,
     breakpoints: {
         340: {
             slidesPerView: 1,
@@ -33,14 +28,13 @@ var swiper2 = new Swiper(".mySwiper2", {
         },
         1024: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 45,
         },
     },
 });
 
 var swiper2 = new Swiper(".mySwiper3", {
     slidesPerView: 3,
-    spaceBetween: 45,
     freeMode: true,
     pagination: {
         el: ".swiper-pagination2",
@@ -57,7 +51,7 @@ var swiper2 = new Swiper(".mySwiper3", {
         },
         1024: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 35,
         },
     },
 });
