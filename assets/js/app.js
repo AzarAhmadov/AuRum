@@ -8,6 +8,7 @@ openBar.addEventListener('click', () => {
     height: 100%;
     max-height: 100%;
     opacity: 1;
+    transition: linear 300ms;
     `
 })
 
