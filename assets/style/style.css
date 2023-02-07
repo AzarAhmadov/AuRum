@@ -39,7 +39,7 @@ body {
   width: 100%;
   background: #fff;
   padding-left: 20px;
-  padding-top: 40px;
+  padding-top: 70px;
   height: 0;
   max-height: 0;
   visibility: hidden;
@@ -49,7 +49,7 @@ body {
 .mobil .close-btn {
   position: absolute;
   top: 30px;
-  right: 20px;
+  right: 30px;
 }
 .mobil .close-btn i {
   color: red;
@@ -95,8 +95,7 @@ body {
   font-size: 20px;
 }
 .mobil .langs ul li.active {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #CEBD88;
 }
 .mobil .langs ul li:last-child {
@@ -410,7 +409,6 @@ body {
 }
 
 .title {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   text-align: center;
@@ -470,7 +468,6 @@ main #agency .container .row .col-lg-6 .left-item .left-txt {
   width: 560px;
 }
 main #agency .container .row .col-lg-6 .right-item {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   background: rgba(206, 189, 136, 0.33);
@@ -478,7 +475,6 @@ main #agency .container .row .col-lg-6 .right-item {
 main #agency .container .row .col-lg-6 .right-item img {
   padding: 30px;
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   height: 100%;
@@ -504,7 +500,6 @@ main #agency .container .row-2 .col-lg-6 .right-item img {
   padding: 30px;
   width: 100%;
   height: 350px;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -578,7 +573,6 @@ main #ships .container .row {
   gap: 50px 0;
 }
 main #ships .container .row .col-6 {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -680,7 +674,6 @@ main #why .container .row .why-left-item p {
   font-family: "Montserrat", sans-serif;
 }
 main #why .container .row .why-right-item {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 20px;
@@ -753,7 +746,6 @@ main #number .container .row {
   justify-content: space-between;
 }
 main #number .container .row .col-lg-4 {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding: 0;
@@ -1018,7 +1010,6 @@ main #certificate .container .row {
   justify-content: space-between;
 }
 main #certificate .container .row .col-lg-3 {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -1061,7 +1052,6 @@ main #work .container .row .col-lg-3 {
   display: flex;
   justify-content: center;
   padding: 0;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -1105,7 +1095,6 @@ footer .container .row {
 }
 footer .container .row .col-lg-4,
 footer .container .row .col-lg-2 {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -1285,7 +1274,6 @@ footer .container .row .col-lg-2 ul li a {
     width: 100%;
   }
   main #ceo .container .row .left-item img {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     width: 400px;
@@ -1506,7 +1494,7 @@ footer .container .row .col-lg-2 ul li a {
     padding-left: 40px;
   }
   footer .container .row .col-lg-2,
-footer .container .row .col-lg-4 {
+  footer .container .row .col-lg-4 {
     margin: 20px 0;
     width: 400px;
     justify-content: flex-start !important;
@@ -1547,15 +1535,15 @@ footer .container .row .col-lg-4 {
 }
 @media only screen and (max-width: 768px) {
   .swiper-button-next,
-.swiper-button-prev {
+  .swiper-button-prev {
     top: 140px !important;
   }
   .swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
+  .swiper-rtl .swiper-button-prev:after {
     font-size: 32px !important;
   }
   .swiper-button-prev:after,
-.swiper-rtl .swiper-button-prev:after {
+  .swiper-rtl .swiper-button-prev:after {
     font-size: 30px !important;
   }
   #banner {

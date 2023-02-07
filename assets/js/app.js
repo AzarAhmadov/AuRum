@@ -14,10 +14,10 @@ openBar.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
     mobil.style = `
-    height: 0;
-    max-height: none;
     visibility: hidden;
-    overflow: hidden;
+    height:0;
+    max-height: none;
+    transition: linear 200ms;
     `
 })
 
