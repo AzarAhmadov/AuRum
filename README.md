@@ -1,2 +1,3 @@
 # AuRum
-<img width="1465" alt="Screen Shot 2023-02-02 at 10 50 53" src="https://user-images.githubusercontent.com/82292818/216421826-0a80442c-1a7f-4046-9ea1-553adba37058.png">
+
+<img width="1492" alt="Screen Shot 2023-02-06 at 00 27 28" src="https://user-images.githubusercontent.com/82292818/216921935-c7e5959d-3577-4174-bb55-470c57e7cd50.png">
