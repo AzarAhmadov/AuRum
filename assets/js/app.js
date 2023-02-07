@@ -1,60 +1,24 @@
-var swiper = new Swiper(".mySwiper", {
-    cssMode: true,
-    mousewheel: false,
-    slideToClickedSlide: false,
-    watchSlidesProgress: false,
-    noswipingClass: 'swiper-slide',
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
+const mobil = document.querySelector('.mobil');
+const closeBtn = document.querySelector('.close-btn');
+const openBar = document.querySelector('.bx-menu')
 
-var swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 3,
-    spaceBetween: 0,
-    breakpoints: {
-        340: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 45,
-        },
-    },
-});
+openBar.addEventListener('click', () => {
+    mobil.style = `
+    visibility: visible;
+    height: 100%;
+    max-height: 100%;
+    opacity: 1;
+    `
+})
 
-var swiper2 = new Swiper(".mySwiper3", {
-    slidesPerView: 3,
-    freeMode: true,
-    pagination: {
-        el: ".swiper-pagination2",
-        clickable: true,
-    },
-    breakpoints: {
-        340: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 35,
-        },
-    },
-});
+closeBtn.addEventListener('click', () => {
+    mobil.style = `
+    height: 0;
+    max-height: none;
+    visibility: hidden;
+    overflow: hidden;
+    `
+})
 
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");

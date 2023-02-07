@@ -30,6 +30,80 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.mobil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  padding-left: 20px;
+  padding-top: 40px;
+  transition: 300ms linear;
+  height: 0;
+  max-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+}
+.mobil .close-btn {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+.mobil .close-btn i {
+  color: red;
+  font-size: 30px;
+}
+.mobil ul {
+  padding: 0;
+}
+.mobil ul .sosial {
+  padding-top: 5px;
+  display: flex;
+}
+.mobil ul .sosial li {
+  margin-right: 15px;
+}
+.mobil ul .sosial li a {
+  color: #CEBD88;
+  font-size: 20px;
+}
+.mobil ul li {
+  margin-bottom: 10px;
+}
+.mobil ul li:last-child {
+  margin-bottom: 0;
+}
+.mobil ul li a {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-size: 19px;
+}
+.mobil .langs {
+  position: absolute;
+  bottom: 0;
+}
+.mobil .langs ul {
+  display: flex;
+}
+.mobil .langs ul li {
+  margin-right: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+.mobil .langs ul li.active {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #CEBD88;
+}
+.mobil .langs ul li:last-child {
+  margin-right: 0;
+}
+
 .slider {
   position: absolute;
   top: 0;
@@ -116,10 +190,6 @@ body {
 #header .container .row-2 {
   padding-top: 50px;
 }
-#header .container .row-2 nav {
-  display: flex;
-  justify-content: center;
-}
 #header .container .row-2 nav ul {
   display: flex;
   position: relative;
@@ -154,19 +224,61 @@ body {
 #header .container .row-2 nav ul li a i {
   color: #CEBD88;
 }
-#header .container .row-2 nav ul li a.active {
+#header .container .row-2 nav ul li a.link-1.active {
   color: #CEBD88;
   transition: 400ms all;
 }
-#header .container .row-2 nav ul li a.active::after {
+#header .container .row-2 nav ul li a.link-1.active::after {
   width: 135px;
   background: #CEBD88;
   height: 3px;
-  left: -15%;
   position: absolute;
   bottom: 0;
   content: "";
   z-index: 10;
+  left: -20px;
+}
+#header .container .row-2 nav ul li a.link-2.active {
+  color: #CEBD88;
+  transition: 400ms all;
+}
+#header .container .row-2 nav ul li a.link-2.active::after {
+  width: 135px;
+  background: #CEBD88;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  content: "";
+  z-index: 10;
+  left: -10px;
+}
+#header .container .row-2 nav ul li a.link-3.active {
+  color: #CEBD88;
+  transition: 400ms all;
+}
+#header .container .row-2 nav ul li a.link-3.active::after {
+  width: 135px;
+  background: #CEBD88;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  content: "";
+  z-index: 10;
+  left: -15px;
+}
+#header .container .row-2 nav ul li a.link-4.active {
+  color: #CEBD88;
+  transition: 400ms all;
+}
+#header .container .row-2 nav ul li a.link-4.active::after {
+  width: 120px;
+  background: #CEBD88;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  content: "";
+  z-index: 10;
+  left: -20px;
 }
 
 .header::after {
@@ -1255,6 +1367,11 @@ footer .container .row .col-lg-2 ul li a {
   .title {
     margin: 0 auto;
   }
+  .slider .slide-img {
+    -o-object-position: center center;
+       object-position: center center;
+    height: 100%;
+  }
   main article .container {
     padding: 61px 20px;
   }
@@ -1294,8 +1411,14 @@ footer .container .row .col-lg-2 ul li a {
   main #ceo .container .row .right-item p {
     width: 100%;
   }
+  main .why {
+    padding-top: 20px !important;
+  }
   main .why .container .about-row .about-flex {
     flex-direction: column;
+  }
+  main #agency {
+    padding-top: 20px;
   }
   main #agency .container {
     padding-left: 20px;
@@ -1399,6 +1522,12 @@ footer .container .row .col-lg-4 {
   }
   #banner .swiper .swiper-wrapper .swiper-slide .slide-item p {
     width: 100%;
+  }
+  .header::after {
+    height: 368px !important;
+  }
+  .back::after {
+    height: 398px !important;
   }
   #header .container {
     padding-left: 10px;

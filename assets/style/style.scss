@@ -31,6 +31,94 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.mobil {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    padding-left: 20px;
+    padding-top: 40px;
+    transition: 300ms linear;
+    height: 0;
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+
+    .close-btn {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+
+        i {
+            color: red;
+            font-size: 30px;
+        }
+    }
+
+    ul {
+        padding: 0;
+
+        .sosial {
+            padding-top: 5px;
+            display: flex;
+
+            li {
+                margin-right: 15px;
+
+                a {
+                    color: #CEBD88;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        li {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                font-family: 'Montserrat', sans-serif;
+                color: #000;
+                font-size: 19px;
+            }
+        }
+    }
+
+    .langs {
+        position: absolute;
+        bottom: 0;
+
+        ul {
+            display: flex;
+
+            li {
+                margin-right: 15px;
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+
+                &.active {
+                    text-decoration-line: underline;
+                    color: #CEBD88;
+
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
 .slider {
     position: absolute;
     top: 0;
@@ -134,8 +222,6 @@ body {
             padding-top: 50px;
 
             nav {
-                display: flex;
-                justify-content: center;
 
                 ul {
                     display: flex;
@@ -174,21 +260,76 @@ body {
                                 color: #CEBD88;
                             }
 
-                            &.active {
-                                color: #CEBD88;
-                                transition: 400ms all;
+                            &.link-1 {
+                                &.active {
+                                    color: #CEBD88;
+                                    transition: 400ms all;
 
-                                &::after {
-                                    width: 135px;
-                                    background: #CEBD88;
-                                    height: 3px;
-                                    left: -15%;
-                                    position: absolute;
-                                    bottom: 0;
-                                    content: "";
-                                    z-index: 10;
+                                    &::after {
+                                        width: 135px;
+                                        background: #CEBD88;
+                                        height: 3px;
+                                        position: absolute;
+                                        bottom: 0;
+                                        content: "";
+                                        z-index: 10;
+                                        left: -20px;
+                                    }
                                 }
+                            }
 
+                            &.link-2 {
+                                &.active {
+                                    color: #CEBD88;
+                                    transition: 400ms all;
+
+                                    &::after {
+                                        width: 135px;
+                                        background: #CEBD88;
+                                        height: 3px;
+                                        position: absolute;
+                                        bottom: 0;
+                                        content: "";
+                                        z-index: 10;
+                                        left: -10px;
+                                    }
+                                }
+                            }
+
+                            &.link-3 {
+                                &.active {
+                                    color: #CEBD88;
+                                    transition: 400ms all;
+
+                                    &::after {
+                                        width: 135px;
+                                        background: #CEBD88;
+                                        height: 3px;
+                                        position: absolute;
+                                        bottom: 0;
+                                        content: "";
+                                        z-index: 10;
+                                        left: -15px;
+                                    }
+                                }
+                            }
+
+                            &.link-4 {
+                                &.active {
+                                    color: #CEBD88;
+                                    transition: 400ms all;
+
+                                    &::after {
+                                        width: 120px;
+                                        background: #CEBD88;
+                                        height: 3px;
+                                        position: absolute;
+                                        bottom: 0;
+                                        content: "";
+                                        z-index: 10;
+                                        left: -20px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -1624,6 +1765,13 @@ footer {
         margin: 0 auto;
     }
 
+    .slider {
+        .slide-img {
+            object-position: center center;
+            height: 100%;
+        }
+    }
+
     main {
         article {
             .container {
@@ -1683,6 +1831,8 @@ footer {
         }
 
         .why {
+            padding-top: 20px !important;
+
             .container {
                 .about-row {
                     .about-flex {
@@ -1693,6 +1843,8 @@ footer {
         }
 
         #agency {
+            padding-top: 20px;
+
             .container {
                 padding-left: 20px;
                 padding-right: 20px;
@@ -1854,6 +2006,18 @@ footer {
                     }
                 }
             }
+        }
+    }
+
+    .header {
+        &::after {
+            height: 368px !important;
+        }
+    }
+
+    .back {
+        &::after {
+            height: 398px !important;
         }
     }
 
