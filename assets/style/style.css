@@ -1885,6 +1885,12 @@ footer .container .row .col-lg-2 ul li a {
   main article .container .row .col-12 .article-item p {
     margin-top: 10px;
   }
+  main #carrer {
+    padding-top: 0;
+  }
+  main #carrer .container .carrer-top-title {
+    display: none;
+  }
   main #carrer .container .row .col-12 .carrer-item {
     width: 100%;
   }

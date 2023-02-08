@@ -2527,7 +2527,11 @@ footer {
         }
 
         #carrer {
+            padding-top: 0;
             .container {
+                .carrer-top-title{
+                    display: none;
+                }
                 .row {
                     .col-12 {
                         .carrer-item {
