@@ -2668,6 +2668,20 @@ footer {
                 }
             }
         }
+
+        #carrer {
+            .container {
+                .row {
+                    .col-12 {
+                        .carrer-item {
+                            h6 {
+                                width: 250px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #header {
