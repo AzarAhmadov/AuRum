@@ -542,6 +542,93 @@ main article .container .row .col-12 .article-item span {
   color: rgba(206, 189, 136, 0.44);
   margin-right: 10px;
 }
+main .shipDetail {
+  padding-top: 89px;
+  background: url(../images/services-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 140px !important;
+  position: relative;
+}
+main .shipDetail::after {
+  top: 0;
+  z-index: -1;
+  background: #f5f2e7;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+main .shipDetail .container {
+  padding-left: 135px;
+  padding-right: 145px;
+}
+main .shipDetail .container .title {
+  margin-bottom: 41px;
+}
+main .shipDetail .container .row .col-lg-6 .left-item {
+  padding: 26px;
+  position: relative;
+  background: #28364B;
+}
+main .shipDetail .container .row .col-lg-6 .left-item img {
+  width: 100%;
+}
+main .shipDetail .container .row .col-lg-6 .left-item .img-txt {
+  position: absolute;
+  bottom: 22px;
+}
+main .shipDetail .container .row .col-lg-6 .left-item .img-txt span {
+  display: block;
+  width: 240px;
+  background: #28364B;
+  height: 65px;
+  padding: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  display: grid;
+  place-items: center;
+}
+main .shipDetail .container .row .col-lg-6 .right-item {
+  padding-left: 20px;
+  padding-top: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+main .shipDetail .container .videoSlide {
+  padding-top: 33px;
+}
+main .shipDetail .container .videoSlide .swiper .swiper-wrapper {
+  padding-bottom: 60px;
+}
+main .shipDetail .container .videoSlide .swiper .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+main .shipDetail .container .videoSlide .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+main .shipDetail .container .videoSlide .swiper .swiper-wrapper .swiper-slide .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .shipDetail .container .videoSlide .swiper .swiper-wrapper .swiper-slide .icon i {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 80px;
+}
+main .shipDetail .ships {
+  padding-top: 50px !important;
+  background-size: 0px !important;
+}
 main #ships {
   padding-top: 89px;
   background: url(../images/services-bg.png);
@@ -1246,6 +1333,10 @@ footer .container .row .col-lg-2 ul li a {
     padding-left: 50px;
     padding-right: 50px;
   }
+  main .shipDetail .container {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
 @media only screen and (max-width: 1211px) {
   #banner {
@@ -1397,6 +1488,26 @@ footer .container .row .col-lg-2 ul li a {
   }
   main #ceo .container .row .right-item p {
     width: 100%;
+  }
+  main .shipDetail {
+    padding-top: 30px;
+  }
+  main .shipDetail .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  main .shipDetail .container .row .col-lg-6 .right-item {
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+  }
+  main .shipDetail .container .row .col-lg-6 .left-item .img-txt span {
+    width: 190px;
+    height: 55px;
+    font-size: 18px;
+  }
+  main .shipDetail .container .videoSlide {
+    padding-top: 0px;
   }
   main .why {
     padding-top: 20px !important;

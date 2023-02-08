@@ -651,6 +651,115 @@ main {
         }
     }
 
+    .shipDetail {
+        padding-top: 89px;
+        background: url(../images/services-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 140px !important;
+        position: relative;
+
+        &::after {
+            top: 0;
+            z-index: -1;
+            background: #f5f2e7;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            padding-left: 135px;
+            padding-right: 145px;
+
+            .title {
+                margin-bottom: 41px;
+            }
+
+            .row {
+                .col-lg-6 {
+                    .left-item {
+                        padding: 26px;
+                        position: relative;
+                        background: #28364B;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        .img-txt {
+                            position: absolute;
+                            bottom: 22px;
+
+                            span {
+                                display: block;
+                                width: 240px;
+                                background: #28364B;
+                                height: 65px;
+                                padding: 0;
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 24px;
+                                line-height: 29px;
+                                color: #FFFFFF;
+                                display: grid;
+                                place-items: center;
+                            }
+                        }
+                    }
+
+                    .right-item {
+                        padding-left: 20px;
+                        padding-top: 40px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .videoSlide {
+                padding-top: 33px;
+
+                .swiper {
+                    .swiper-wrapper {
+                        padding-bottom: 60px;
+
+                        .swiper-slide {
+                            position: relative;
+
+                            img {
+                                width: 100%;
+                            }
+
+                            .icon {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+
+                                i {
+                                    color: rgba(255, 255, 255, 0.66);
+                                    font-size: 80px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .ships {
+            padding-top: 50px !important;
+            background-size: 0px !important;
+        }
+    }
+
     #ships {
         padding-top: 89px;
         background: url(../images/services-bg.png);
@@ -1561,6 +1670,13 @@ footer {
                 padding-right: 50px;
             }
         }
+
+        .shipDetail {
+            .container {
+                padding-left: 90px;
+                padding-right: 90px;
+            }
+        }
     }
 }
 
@@ -1824,6 +1940,39 @@ footer {
                             width: 100%;
                         }
                     }
+                }
+            }
+        }
+
+        .shipDetail {
+            padding-top: 30px;
+
+            .container {
+                padding-left: 20px;
+                padding-right: 20px;
+
+                .row {
+                    .col-lg-6 {
+                        .right-item {
+                            padding: 0;
+                            margin: 20px 0;
+                            text-align: center;
+                        }
+
+                        .left-item {
+                            .img-txt {
+                                span {
+                                    width: 190px;
+                                    height: 55px;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .videoSlide {
+                    padding-top: 0px;
                 }
             }
         }

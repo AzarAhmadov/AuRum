@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <!-- Mobil Menu Start -->
     <div class="mobil">
         <ul>
@@ -110,8 +109,8 @@
     <!-- Main Start -->
     <main>
 
-        <!-- Ships Start -->
-        <section id="ships">
+        <!-- shipDetail Start -->
+        <section class="shipDetail">
             <div class="container">
                 <div class="title">
                     <span class="top-title">
@@ -127,20 +126,80 @@
                     </svg>
                 </div>
                 <div class="row">
-                    <div class="col-6">
-                        <a href="shipsDetails.html">
-                            <div class="ship-item">
-                                <img src="./assets/images/sm1.png" alt="">
-                                <div class="img-txt">
-                                    <span>
-                                        GƏMİ 1
-                                    </span>
+                    <div class="col-lg-6">
+                        <div class="left-item">
+                            <img src="./assets/images/sm1.png" alt="">
+                            <div class="img-txt">
+                                <span>
+                                    GƏMİ 1
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="right-item">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoSlide">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-item">
+                                    <img src="./assets/images/gv1.png" alt="">
+                                    <div class="icon">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </a>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/gv2.png" alt="">
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/gv3.png" alt="">
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/gv4.png" alt="">
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/gv3.png" alt="">
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/gv4.png" alt="">
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="col-6 col-md-6">
-                        <a href="shipsDetails.html">
+                </div>
+            </div>
+            <div class="ships" id="ships">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-6">
                             <div class="ship-item">
                                 <img src="./assets/images/sm2.png" alt="">
                                 <div class="img-txt">
@@ -149,10 +208,8 @@
                                     </span>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="shipsDetails.html">
+                        </div>
+                        <div class="col-6">
                             <div class="ship-item">
                                 <img src="./assets/images/sm3.png" alt="">
                                 <div class="img-txt">
@@ -161,10 +218,8 @@
                                     </span>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="shipsDetails.html">
+                        </div>
+                        <div class="col-6">
                             <div class="ship-item">
                                 <img src="./assets/images/sm4.png" alt="">
                                 <div class="img-txt">
@@ -173,10 +228,8 @@
                                     </span>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="shipsDetails.html">
+                        </div>
+                        <div class="col-6">
                             <div class="ship-item">
                                 <img src="./assets/images/sm5.png" alt="">
                                 <div class="img-txt">
@@ -185,10 +238,8 @@
                                     </span>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="shipsDetails.html">
+                        </div>
+                        <div class="col-6">
                             <div class="ship-item">
                                 <img src="./assets/images/sm6.png" alt="">
                                 <div class="img-txt">
@@ -197,93 +248,15 @@
                                     </span>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- Ships End -->
-
-        <!-- Galary Start -->
-        <section id="galary">
-            <div class="container">
-                <div class="row content-row">
-                    <div class="col-lg-6">
-                        <div class="left-item">
-                            <img src="./assets/images/g1Main.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 d-flex justify-content-end flex-xl-column">
-                        <div class="right-item">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. It has
-                                survived not only five centuries, but also the leap into electronic typesetting,
-                                remaining essentially unchanged.</p>
-                        </div>
-                        <div class="row row-2">
-                            <div class="col-4">
-                                <img src="./assets/images/g2.png" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img src="./assets/images/g3.png" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img src="./assets/images/g4.png" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img src="./assets/images/g5.png" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img src="./assets/images/g6.png" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img src="./assets/images/g7.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row video-row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="galary-video">
-                            <img src="./assets/images/gv1.png" alt="">
-                            <div class="icon">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="galary-video">
-                            <img src="./assets/images/gv2.png" alt="">
-                            <div class="icon">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="galary-video">
-                            <img src="./assets/images/gv3.png" alt="">
-                            <div class="icon">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="galary-video">
-                            <img src="./assets/images/gv4.png" alt="">
-                            <div class="icon">
-                                <i class="fa-regular fa-circle-play"></i>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Galary End -->
+        <!-- shipDetail End -->
 
     </main>
-    <!-- Main End -->
+    <!-- Main end -->
 
     <!-- Footer Start -->
     <footer id="footer">
@@ -338,8 +311,31 @@
     </footer>
     <!-- Footer End -->
 
-    <!-- Js file -->
     <script src="./assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                340: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>

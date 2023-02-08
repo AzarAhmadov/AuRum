@@ -50,13 +50,11 @@
 
     <!-- Show Start -->
     <div class="slider">
-        <img class="slide-img active" src="./assets/images/banner.png" alt="">
+        <img class="slide-img active" src="./assets/images/banner.png">
         <img class="slide-img"
-            src="https://images.pexels.com/photos/799091/pexels-photo-799091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="">
+            src="https://images.pexels.com/photos/799091/pexels-photo-799091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
         <img class="slide-img"
-            src="https://images.pexels.com/photos/327337/pexels-photo-327337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="">
+            src="https://images.pexels.com/photos/327337/pexels-photo-327337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
     </div>
     <!-- Show End -->
 
@@ -523,7 +521,6 @@
     </main>
     <!-- Main End -->
 
-
     <!-- Footer Start -->
     <footer id="footer">
         <div class="container">
@@ -577,10 +574,34 @@
     </footer>
     <!-- Footer End -->
 
-
     <!-- Swiper slide cdn -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+        const nextBtn = document.querySelector(".next");
+        const prevBtn = document.querySelector(".prev");
+        const slide = document.querySelectorAll(".slide-img");
+        var i = 0;
+
+        prevBtn.onclick = function () {
+            slide[i].classList.remove("active");
+            i--;
+            if (i < 0) {
+                i = slide.length - 1;
+            }
+            slide[i].classList.add("active");
+        };
+
+        nextBtn.onclick = function () {
+            slide[i].classList.remove("active");
+            i++;
+
+            if (i >= slide.length) {
+                i = 0;
+            }
+
+            slide[i].classList.add("active");
+        };
+
         var swiper = new Swiper(".mySwiper", {
             cssMode: true,
             mousewheel: false,
