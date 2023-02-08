@@ -1499,7 +1499,7 @@ main {
                             width: 555px;
                             height: 0;
                             max-height: 0;
-                            transition: 400ms all;
+                            transition: 700ms all;
                             overflow: hidden;
 
                             &.active {
@@ -1587,6 +1587,7 @@ main {
                             font-size: 55px;
                             position: absolute;
                             right: 0;
+                            cursor: pointer;
 
                             &.active {
                                 transform: rotate(90deg);

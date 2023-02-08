@@ -1226,7 +1226,7 @@ main #carrer .container .row .col-12 .carrer-item .carrer-text {
   width: 555px;
   height: 0;
   max-height: 0;
-  transition: 400ms all;
+  transition: 700ms all;
   overflow: hidden;
 }
 main #carrer .container .row .col-12 .carrer-item .carrer-text.active {
@@ -1303,6 +1303,7 @@ main #carrer .container .row .col-12 .carrer-item .bx-chevron-right {
   font-size: 55px;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 main #carrer .container .row .col-12 .carrer-item .bx-chevron-right.active {
   transform: rotate(90deg);

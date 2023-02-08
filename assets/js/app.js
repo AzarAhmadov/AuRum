@@ -32,3 +32,10 @@ carrer.forEach((el, item) => {
         arrow[item].classList.toggle('active')
     })
 })
+
+arrow.forEach((el, item) => {
+    el.addEventListener('click', () => {
+        carrerBottomContent[item].classList.toggle('active')
+        arrow[item].classList.toggle('active')
+    })
+})
