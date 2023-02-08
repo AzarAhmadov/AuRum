@@ -20,3 +20,15 @@ closeBtn.addEventListener('click', () => {
     transition: linear 200ms;
     `
 })
+
+const carrer = document.querySelectorAll('.carrer-top');
+const carrerItem = document.querySelectorAll('.carrer-item');
+const carrerBottomContent = document.querySelectorAll('.carrer-text');
+const arrow = document.querySelectorAll('.bx-chevron-right')
+
+carrer.forEach((el, item) => {
+    el.addEventListener('click', () => {
+        carrerBottomContent[item].classList.toggle('active')
+        arrow[item].classList.toggle('active')
+    })
+})
