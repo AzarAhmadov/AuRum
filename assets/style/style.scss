@@ -562,6 +562,93 @@ body {
 }
 
 main {
+    #blogs {
+        padding-top: 61px;
+        padding-bottom: 100px;
+
+        .container {
+            padding: 0 134px;
+
+            .row {
+                display: flex;
+                gap: 50px 0;
+
+                .col-lg-3 {
+
+                    .blog-item {
+                        img {
+                            width: 100%;
+                        }
+
+                        .blogs-title {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 26px;
+                            color: #303030;
+                            margin-top: 15px;
+                            margin-bottom: 12px;
+                        }
+
+                        .blogs-content {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #000000;
+                        }
+
+                        .blog-bottom {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .left {
+                                i {
+                                    color: #CEBD88;
+                                }
+
+                                span {
+                                    font-family: 'Montserrat';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    color: #5C5B5B;
+                                    margin-left: 7px;
+                                }
+                            }
+
+                            .right {
+                                a {
+                                    display: flex;
+                                    align-items: center;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    font-family: 'Montserrat';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    color: #28364B;
+
+                                    i {
+                                        font-size: 12px;
+                                        margin-left: 6px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     #top-btns {
         width: 100%;
         background: rgba(206, 189, 136, 0.2);
@@ -2166,6 +2253,12 @@ footer {
     }
 
     main {
+        #blogs {
+            .container {
+                padding: 0 50px;
+            }
+        }
+
         #contact-area {
             .container {
                 padding: 0 20px;
@@ -2294,6 +2387,12 @@ footer {
     }
 
     main {
+        #blogs {
+            .container {
+                padding: 0 20px;
+            }
+        }
+
         #contact-area {
             .container {
                 padding: 0 50px;
@@ -2959,6 +3058,24 @@ footer {
     }
 
     main {
+
+        #blogs {
+            padding-top: 20px;
+
+            .container {
+                padding: 0 15px;
+
+                .row {
+                    .col-lg-3 {
+                        .blog-item {
+                            .blogs-title {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         #contact-area {
             padding-top: 30px;
