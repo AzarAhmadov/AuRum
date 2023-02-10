@@ -306,6 +306,20 @@ body {
   z-index: 10;
   left: -20px;
 }
+#header .container .row-2 nav ul li a.link-7.active {
+  color: #CEBD88;
+  transition: 400ms all;
+}
+#header .container .row-2 nav ul li a.link-7.active::after {
+  width: 120px;
+  background: #CEBD88;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  content: "";
+  z-index: 10;
+  left: -30px;
+}
 
 .header::after {
   content: "";
@@ -582,6 +596,147 @@ main #agency .container .row-2 .col-lg-6 .right-item img {
   height: 350px;
   height: -moz-fit-content;
   height: fit-content;
+}
+main #contact-area {
+  background: #f5f2e7;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+main #contact-area .container {
+  padding-left: 188px;
+  padding-right: 112px;
+}
+main #contact-area .container .row {
+  display: flex;
+  justify-content: space-between;
+}
+main #contact-area .container .row .contact-col {
+  width: -moz-max-content;
+  width: max-content;
+}
+main #contact-area .container .row .contact-col .left-item ul {
+  padding: 0;
+}
+main #contact-area .container .row .contact-col .left-item ul li {
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+main #contact-area .container .row .contact-col .left-item ul li.title {
+  margin-bottom: 20px;
+}
+main #contact-area .container .row .contact-col .left-item ul li.mail {
+  margin-top: 20px;
+}
+main #contact-area .container .row .contact-col .left-item ul li.mail span {
+  margin-right: 19px;
+}
+main #contact-area .container .row .contact-col .left-item ul li.mail p {
+  border-bottom: 1px solid #000;
+}
+main #contact-area .container .row .contact-col .left-item ul li .number {
+  display: flex;
+  flex-direction: column;
+}
+main #contact-area .container .row .contact-col .left-item ul li .number span {
+  margin-left: 27px;
+  border-bottom: 1px solid #000;
+}
+main #contact-area .container .row .contact-col .right-item form .form-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+main #contact-area .container .row .contact-col .right-item form .form-btn button {
+  background: #28364B;
+  border-radius: 5px;
+  width: 309.48px;
+  height: 54px;
+  border: none;
+  font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+main #contact-area .container .row .contact-col .right-item form label {
+  margin-top: 20px;
+  margin-bottom: 17px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #303030;
+}
+main #contact-area .container .row .contact-col .right-item form textarea {
+  resize: none;
+  width: 100%;
+  background: rgba(206, 189, 136, 0.15);
+  border-radius: 5px;
+  height: 150px;
+  border: none;
+  padding-top: 18px;
+  padding-left: 11px;
+}
+main #contact-area .container .row .contact-col .right-item form textarea::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #818181;
+}
+main #contact-area .container .row .contact-col .right-item form textarea::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #818181;
+}
+main #contact-area .container .row .contact-col .right-item form .inputs {
+  display: flex;
+  gap: 0 30px;
+}
+main #contact-area .container .row .contact-col .right-item form .inputs div label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #303030;
+  margin-bottom: 17px;
+  margin-top: 20px;
+}
+main #contact-area .container .row .contact-col .right-item form .inputs div input {
+  background: rgba(206, 189, 136, 0.15);
+  border-radius: 5px;
+  border: none;
+  width: 334.44px;
+  height: 51px;
+  padding-left: 11px;
+}
+main #contact-area .container .row .contact-col .right-item form .inputs div input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #818181;
+}
+main #contact-area .container .row .contact-col .right-item form .inputs div input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #818181;
 }
 main article .container {
   padding: 61px 135px;
@@ -1629,6 +1784,9 @@ footer .container .row .col-lg-2 ul li a {
     white-space: nowrap;
     margin-right: 40px;
   }
+  main #contact-area .container {
+    padding: 0 20px;
+  }
   main #blog .container {
     padding-left: 50px;
     padding-right: 50px;
@@ -1690,6 +1848,12 @@ footer .container .row .col-lg-2 ul li a {
 @media only screen and (max-width: 1211px) {
   #banner {
     padding-top: 60px;
+  }
+  main #contact-area .container {
+    padding: 0 50px;
+  }
+  main #contact-area .container .row .contact-col {
+    margin: 0 auto;
   }
   main .galary .container .row .col-lg-6 .right-item .galary-txt {
     padding-top: 10px;
@@ -2070,6 +2234,32 @@ footer .container .row .col-lg-2 ul li a {
     place-items: center;
   }
   #banner .swiper .swiper-wrapper .swiper-slide .slide-item p {
+    width: 100%;
+  }
+  main #contact-area {
+    padding-top: 30px;
+  }
+  main #contact-area .container {
+    padding: 0 20px;
+  }
+  main #contact-area .container .row .contact-col {
+    width: 100%;
+  }
+  main #contact-area .container .row .contact-col .left-item ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  main #contact-area .container .row .contact-col form .inputs {
+    flex-direction: column;
+  }
+  main #contact-area .container .row .contact-col form .inputs div input {
+    width: 100% !important;
+  }
+  main #contact-area .container .row .contact-col form .form-btn {
+    justify-content: center !important;
+  }
+  main #contact-area .container .row .contact-col form .form-btn button {
     width: 100%;
   }
   main #form {
