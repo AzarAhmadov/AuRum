@@ -1186,7 +1186,8 @@ main #carrer {
   overflow-Y: hidden;
 }
 main #carrer .container {
-  padding: 0 135px;
+  padding-left: 150px;
+  padding-right: 269px;
 }
 main #carrer .container .carrer-top-title {
   font-family: "Montserrat";
@@ -1330,6 +1331,123 @@ main #carrer .container .row .col-12 .carrer-item .carrer-detail ul li span {
 }
 main #carrer .container .row .col-12 .carrer-item .carrer-detail ul li i {
   color: #717070;
+}
+main #form {
+  padding-top: 115px;
+  background: url(../images/xBack.png);
+  background-repeat: no-repeat;
+  background-position: 0px 160px !important;
+  position: relative;
+}
+main #form::after {
+  top: 0;
+  z-index: -1;
+  background: #f5f2e7;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+main #form .container {
+  padding-left: 163px;
+  padding-right: 284px;
+}
+main #form .container h6 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #303031;
+  border-bottom: 1px solid #E2E2E1;
+  padding-bottom: 26px;
+}
+main #form .container .row .col-12 form .cv label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #303031;
+  margin-bottom: 12px;
+  margin-top: 29px;
+}
+main #form .container .row .col-12 form .cv .cv-area {
+  background: rgba(206, 189, 136, 0.22);
+  width: 908px;
+  height: 130px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #form .container .row .col-12 form .cv .cv-area i {
+  font-size: 40px;
+  color: #ABAAAB;
+}
+main #form .container .row .col-12 form .cv .cv-area span {
+  margin-top: 11px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ABAAAB;
+}
+main #form .container .row .col-12 form .cv .form-btn {
+  margin-top: 30px;
+  width: 908px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 101px;
+}
+main #form .container .row .col-12 form .cv .form-btn button {
+  width: 184px;
+  height: 50px;
+  background: #28364B;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+}
+main #form .container .row .col-12 form .inputs {
+  display: flex;
+  gap: 20px;
+}
+main #form .container .row .col-12 form .inputs div label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #303031;
+  margin-bottom: 12px;
+  margin-top: 29px;
+}
+main #form .container .row .col-12 form .inputs div input {
+  width: 443px;
+  background: rgba(206, 189, 136, 0.22);
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 14px;
+  border: none;
+}
+main #form .container .row .col-12 form .inputs div input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ABAAAB;
+}
+main #form .container .row .col-12 form .inputs div input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ABAAAB;
 }
 
 footer {
@@ -1507,6 +1625,15 @@ footer .container .row .col-lg-2 ul li a {
   #banner {
     padding-top: 60px;
   }
+  main #form .container {
+    padding: 0 100px;
+  }
+  main #form .container .row .col-12 form .inputs div input {
+    width: 400px;
+  }
+  main #form .container .row .col-12 form .cv .cv-area {
+    width: 820px;
+  }
   main #logo-area {
     background: #28364B;
   }
@@ -1602,6 +1729,9 @@ footer .container .row .col-lg-2 ul li a {
   main #galary .container .video-row img:last-child {
     margin-bottom: 0;
   }
+  main #carrer .container {
+    padding: 0 50px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .bx-menu {
@@ -1618,7 +1748,30 @@ footer .container .row .col-lg-2 ul li a {
   main article .container {
     padding: 61px 20px;
   }
+  main #form .container {
+    padding: 0 20px;
+  }
+  main #form .container .row .col-12 form .inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+  main #form .container .row .col-12 form .inputs div input {
+    width: 600px;
+  }
+  main #form .container .row .col-12 form .cv {
+    align-items: center;
+    width: 600px;
+    margin: 0 auto;
+  }
+  main #form .container .row .col-12 form .cv .cv-area {
+    margin: 0 auto;
+    width: 100%;
+  }
+  main #form .container .row .col-12 form .cv .form-btn {
+    width: 600px;
+  }
   main #carrer {
+    margin-top: 10px;
     padding-top: 25px;
   }
   main #carrer .container {
@@ -1843,6 +1996,22 @@ footer .container .row .col-lg-2 ul li a {
   #banner .swiper .swiper-wrapper .swiper-slide .slide-item p {
     width: 100%;
   }
+  main #form {
+    padding-top: 50px;
+  }
+  main #form .container .row .col-12 form .inputs div {
+    width: 100%;
+  }
+  main #form .container .row .col-12 form .inputs div input {
+    width: 100%;
+  }
+  main #form .container .row .col-12 form .cv {
+    width: 100%;
+  }
+  main #form .container .row .col-12 form .cv .form-btn {
+    width: 100%;
+    margin-bottom: 40px;
+  }
   main #number .container .row {
     justify-content: center;
     gap: 0 30px;
@@ -1886,10 +2055,10 @@ footer .container .row .col-lg-2 ul li a {
     margin-top: 10px;
   }
   main #carrer {
-    padding-top: 0;
+    margin-top: 10px;
   }
   main #carrer .container .carrer-top-title {
-    display: none;
+    text-align: center;
   }
   main #carrer .container .row .col-12 .carrer-item {
     width: 100%;
@@ -1959,6 +2128,9 @@ footer .container .row .col-lg-2 ul li a {
   main #why .container .row .col-lg-6 .why-right-item img {
     width: 100%;
     height: 260px;
+  }
+  main #carrer {
+    margin: 0;
   }
   main #carrer .container .row .col-12 .carrer-item h6 {
     width: 250px;
