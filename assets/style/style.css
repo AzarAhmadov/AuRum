@@ -2808,6 +2808,24 @@ footer .container .row .col-lg-2 ul li a {
     align-items: center;
     text-align: center;
   }
+  main #blogs-detail .container .row .col-lg-5 .news .news-flex .blog-area .news-title,
+  main #blogs-detail .container .row .blog-col .news .news-flex .blog-area .news-title {
+    font-size: 19px;
+    width: 250px;
+    margin-bottom: 10px;
+  }
+  main #blogs-detail .container .row .col-lg-5 .news .news-flex .blog-area .news-content,
+  main #blogs-detail .container .row .blog-col .news .news-flex .blog-area .news-content {
+    width: 80%;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  main #blogs-detail .container .row .col-lg-5 .news .news-flex .blog-area .more span,
+  main #blogs-detail .container .row .col-lg-5 .news .news-flex .blog-area .more a,
+  main #blogs-detail .container .row .blog-col .news .news-flex .blog-area .more span,
+  main #blogs-detail .container .row .blog-col .news .news-flex .blog-area .more a {
+    font-size: 15px;
+  }
   main #blogs-detail .container .row .col-lg-5 .news .news-flex .blog-area .more .left,
   main #blogs-detail .container .row .blog-col .news .news-flex .blog-area .more .left {
     margin-right: 30px;
@@ -2830,6 +2848,24 @@ footer .container .row .col-lg-2 ul li a {
     height: 310px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  main #blogs-detail .container .row .col-lg-5 .right-item .old-news #news .news-flex .blog-area .news-title,
+  main #blogs-detail .container .row .blog-col .right-item .old-news #news .news-flex .blog-area .news-title {
+    font-size: 19px;
+    width: 250px;
+    margin-bottom: 10px;
+  }
+  main #blogs-detail .container .row .col-lg-5 .right-item .old-news #news .news-flex .blog-area .news-content,
+  main #blogs-detail .container .row .blog-col .right-item .old-news #news .news-flex .blog-area .news-content {
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  main #blogs-detail .container .row .col-lg-5 .right-item .old-news #news .news-flex .blog-area .more span,
+  main #blogs-detail .container .row .col-lg-5 .right-item .old-news #news .news-flex .blog-area .more a,
+  main #blogs-detail .container .row .blog-col .right-item .old-news #news .news-flex .blog-area .more span,
+  main #blogs-detail .container .row .blog-col .right-item .old-news #news .news-flex .blog-area .more a {
+    font-size: 15px;
   }
   main #top-btns {
     margin-top: 0;

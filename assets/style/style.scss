@@ -3794,7 +3794,26 @@ footer {
                                     align-items: center;
                                     text-align: center;
 
+                                    .news-title {
+                                        font-size: 19px;
+                                        width: 250px;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    .news-content {
+                                        width: 80%;
+                                        font-size: 13px;
+                                        margin-bottom: 10px;
+                                    }
+
                                     .more {
+
+                                        span,
+                                        a {
+                                            font-size: 15px;
+
+                                        }
+
                                         .left {
                                             margin-right: 30px;
                                         }
@@ -3813,11 +3832,34 @@ footer {
 
                                 #news {
                                     width: 360px;
-                                    .news-flex{
-                                        img{
+
+                                    .news-flex {
+                                        img {
                                             width: 100%;
                                             height: 310px;
                                             object-fit: contain;
+                                        }
+
+                                        .blog-area {
+                                            .news-title {
+                                                font-size: 19px;
+                                                width: 250px;
+                                                margin-bottom: 10px;
+                                            }
+
+                                            .news-content {
+                                                width: 100%;
+                                                font-size: 13px;
+                                                margin-bottom: 10px;
+                                            }
+
+                                            .more {
+
+                                                span,
+                                                a {
+                                                    font-size: 15px;
+                                                }
+                                            }
                                         }
                                     }
                                 }
