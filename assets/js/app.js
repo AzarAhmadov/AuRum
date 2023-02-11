@@ -40,6 +40,25 @@ arrow.forEach((el, item) => {
     })
 })
 
+const current_year = document.querySelector('.current-year');
+const year = document.querySelector('.year');
+const yearInner = document.querySelectorAll('.year-txt');
+
+current_year.innerHTML = '2023 <i class="fa-solid fa-angle-down"></i>'
+
+yearInner.forEach((el, item) => {
+    el.addEventListener('click', () => {
+        let currentYear = el.innerHTML
+        current_year.innerHTML = currentYear + '<i class="fa-solid fa-angle-down"></i>'
+        year.classList.remove('active')
+    })
+})
+
+
+current_year.addEventListener('click', () => {
+    year.classList.toggle('active')
+})
+
 const cv = document.querySelector('.cv-area');
 
 cv.addEventListener('click', () => {
@@ -50,5 +69,4 @@ cv.addEventListener('click', () => {
         console.log(files);
     };
     input.click();
-
 })

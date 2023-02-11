@@ -272,7 +272,7 @@ body {
                                         bottom: 0;
                                         content: "";
                                         z-index: 10;
-                                        left: -20px;
+                                        left: -22px;
                                     }
                                 }
                             }
@@ -344,7 +344,7 @@ body {
                                         bottom: 0;
                                         content: "";
                                         z-index: 10;
-                                        left: -22px;
+                                        left: -25px;
                                     }
                                 }
                             }
@@ -565,6 +565,7 @@ main {
     #blogs {
         padding-top: 61px;
         padding-bottom: 100px;
+        background: #f5f2e7;
 
         .container {
             padding: 0 134px;
@@ -639,6 +640,383 @@ main {
                                     i {
                                         font-size: 12px;
                                         margin-left: 6px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #blogs-detail {
+        padding-bottom: 70px;
+        padding-top: 60px;
+        background: url(../images/services-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 110px !important;
+        position: relative;
+
+        &::after {
+            top: 0;
+            z-index: -1;
+            background: #f5f2e7;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            padding-left: 136px;
+            padding-right: 133px;
+
+
+            .title {
+                margin-bottom: 5px;
+            }
+
+            .row {
+                display: flex;
+
+                .blog-col {
+
+                    .left-item {
+                        img {
+                            width: 620px;
+                            margin-bottom: 30px;
+                        }
+
+                        .detail-title {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #303030;
+                            margin-bottom: 16px;
+                        }
+
+                        .date {
+                            margin-bottom: 17px;
+
+                            i {
+                                color: #CEBD88;
+                            }
+
+                            span {
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #5C5B5B;
+                                margin-left: 6px;
+                            }
+                        }
+
+                        .detail-content {
+                            p {
+                                width: 620px;
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 27px;
+                                color: #000000;
+                                margin: 0;
+                                padding-bottom: 23px;
+                            }
+                        }
+                    }
+
+                    .right-item {
+                        .news-flex {
+                            display: flex;
+                            margin-bottom: 28px;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            img {
+                                width: 220px;
+                                height: 160px;
+                            }
+
+                            .blog-area {
+                                padding-left: 16px;
+                                display: flex;
+                                flex-direction: column;
+
+
+                                .news-title {
+                                    font-family: 'Montserrat';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    color: #303030;
+                                    width: 167px;
+                                }
+
+                                .news-content {
+                                    font-family: 'Montserrat';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                    color: #000000;
+                                    width: 265px;
+                                    padding: 0;
+                                    margin: 0;
+                                }
+
+                                .more {
+                                    margin-top: 8px;
+                                    padding-left: 0;
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    i {
+                                        color: #CEBD88;
+                                    }
+
+                                    span {
+                                        font-family: 'Montserrat';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 15px;
+                                        color: #5C5B5B;
+                                    }
+
+                                    a {
+                                        font-family: 'Montserrat';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 15px;
+                                        color: #28364B;
+                                    }
+                                }
+                            }
+                        }
+
+                        .old-news {
+                            padding-top: 50px;
+                            width: 440px;
+
+                            .old-flex {
+                                display: flex;
+                                align-items: flex-end;
+                                justify-content: space-between;
+
+                                div {
+                                    position: relative;
+
+                                    .year {
+                                        top: 55px;
+                                        position: absolute;
+                                        right: 0;
+                                        width: 110px;
+                                        height: fit-content;
+                                        display: flex;
+                                        align-items: center;
+                                        border: none;
+                                        justify-content: center;
+                                        background: #28364B;
+                                        font-family: 'Montserrat';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        color: #FFFFFF;
+                                        z-index: 10;
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        transition: 200ms all;
+
+
+                                        &.active {
+                                            visibility: visible;
+                                            opacity: 1;
+                                            bottom: 0;
+                                            top: 45px;
+                                        }
+
+                                        ul {
+                                            margin: 0;
+                                            padding: 0;
+                                            width: 100%;
+                                            text-align: center;
+
+                                            li {
+                                                padding: 5px 0;
+                                                cursor: pointer;
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+
+                                    span {
+                                        width: 120px;
+                                        height: 42px;
+                                        font-family: 'Montserrat';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        color: #3E4F69;
+                                        display: block;
+                                        background: #fff;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+
+                                        i {
+                                            margin-left: 5px;
+                                            color: #CEBD88;
+                                        }
+                                    }
+
+                                    button {
+                                        width: 110px;
+                                        height: 42px;
+                                        display: flex;
+                                        align-items: center;
+                                        border: none;
+                                        justify-content: center;
+                                        background: #28364B;
+                                        font-family: 'Montserrat';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        color: #FFFFFF;
+
+                                        i {
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            #news {
+                                background: #fff;
+                                padding: 20px;
+                                width: 440px;
+
+                                .news-flex {
+                                    display: flex;
+                                    margin-bottom: 28px;
+
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+
+                                    img {
+                                        width: 184.43px;
+                                        height: 145px;
+                                    }
+
+                                    .blog-area {
+
+                                        .news-title {
+                                            font-family: 'Montserrat';
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 22px;
+                                            color: #303030;
+                                            width: 167px;
+                                            margin-bottom: 0;
+                                        }
+
+                                        .news-content {
+                                            font-size: 10px;
+                                            width: 222.16px;
+                                        }
+
+                                        .more {
+                                            margin: 0;
+
+                                            span {
+                                                font-size: 10px;
+
+                                            }
+
+                                            a {
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .slide-area {
+                            background: #CEBD88;
+                            position: relative;
+
+                            .swiper {
+
+                                .swiper-button-prev:after,
+                                .swiper-rtl .swiper-button-next:after {
+                                    font-size: 10px !important;
+                                }
+
+                                .swiper-slide-active {
+                                    span {
+                                        color: #28364B !important;
+
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            bottom: 7px;
+                                            left: 50%;
+                                            width: 6px;
+                                            height: 6px;
+                                            background: #28364B;
+                                            border-radius: 50%;
+                                        }
+                                    }
+                                }
+
+                                .swiper-button-next:after,
+                                .swiper-rtl .swiper-button-prev:after {
+                                    font-size: 10px !important;
+                                }
+
+                                .swiper-button-prev {
+                                    left: 5px;
+                                    top: 22px !important;
+                                }
+
+                                .swiper-button-next {
+                                    right: 5px;
+                                    top: 22px !important;
+                                }
+
+                                .swiper-wrapper {
+
+                                    .swiper-slide {
+                                        text-align: center;
+                                        line-height: 42px;
+                                        height: 42px;
+
+
+                                        .moon {
+                                            font-family: 'Montserrat';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 22px;
+                                            color: #545454;
+                                            text-align: center;
+                                        }
                                     }
                                 }
                             }
@@ -2253,6 +2631,26 @@ footer {
     }
 
     main {
+        #blogs-detail {
+            .container {
+                .row {
+                    .col-lg-7 {
+                        .left-item {
+                            img {
+                                width: 97%;
+                            }
+
+                            .detail-content {
+                                p {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         #blogs {
             .container {
                 padding: 0 50px;
@@ -2656,6 +3054,35 @@ footer {
     }
 
     main {
+        #blogs-detail {
+            .container {
+                padding: 0 50px;
+
+                .title {
+                    padding: 20px 0;
+                }
+
+                .row {
+                    .col-lg-7 {
+                        .left-item {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .col-lg-5 {
+                        display: flex;
+                        justify-content: center;
+
+                        .old-news {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+
         article {
             .container {
                 padding: 61px 20px;
@@ -3058,12 +3485,11 @@ footer {
     }
 
     main {
-
         #blogs {
-            padding-top: 20px;
+            padding: 25px 0;
 
             .container {
-                padding: 0 15px;
+                padding: 0 18px;
 
                 .row {
                     .col-lg-3 {
@@ -3078,6 +3504,7 @@ footer {
         }
 
         #contact-area {
+            padding-bottom: 30px;
             padding-top: 30px;
 
             .container {
@@ -3338,6 +3765,69 @@ footer {
     }
 
     main {
+        #blogs-detail {
+            padding-top: 20px;
+
+            .container {
+                padding: 0 20px;
+
+                .row {
+
+                    .col-lg-5,
+                    .blog-col {
+                        .news {
+                            .news-flex {
+                                flex-direction: column;
+                                align-items: center;
+
+                                img {
+                                    width: 100%;
+                                    height: 300px;
+                                    object-fit: contain;
+                                }
+
+                                .blog-area {
+                                    margin-top: 20px;
+                                    padding: 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+
+                                    .more {
+                                        .left {
+                                            margin-right: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .right-item {
+                            .old-news {
+                                width: 360px;
+
+                                .old-flex {
+                                    flex-direction: column;
+                                }
+
+                                #news {
+                                    width: 360px;
+                                    .news-flex{
+                                        img{
+                                            width: 100%;
+                                            height: 310px;
+                                            object-fit: contain;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         #top-btns {
             margin-top: 0;
             padding-top: 38px;
