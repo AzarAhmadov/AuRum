@@ -2600,6 +2600,9 @@ footer .container .row .col-lg-2 ul li a {
   .back::after {
     height: 398px;
   }
+  .back .title {
+    transform: translateY(-35px);
+  }
   #header .container {
     padding-left: 10px;
     padding-right: 10px;

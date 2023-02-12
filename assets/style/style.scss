@@ -3429,6 +3429,9 @@ footer {
         &::after {
             height: 398px;
         }
+        .title{
+            transform: translateY(-35px);
+        }
     }
 
     #header {
