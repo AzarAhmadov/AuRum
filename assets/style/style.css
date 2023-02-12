@@ -2364,6 +2364,15 @@ footer .container .row .col-lg-2 ul li a {
        object-position: center center;
     height: 100%;
   }
+  main #blogs .container .row .col-lg-3 .blog-item {
+    text-align: center;
+  }
+  main #blogs .container .row .col-lg-3 .blog-item img {
+    height: -moz-fit-content;
+    height: fit-content;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   main #blogs-detail .container {
     padding: 0 50px;
   }
