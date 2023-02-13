@@ -13,7 +13,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
+<body id="body">
 
     <!-- Mobil Menu Start -->
     <div class="mobil">
@@ -300,8 +300,8 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="number-item">
-                            <span>
-                                90
+                            <span data-count="90" class="number">
+                                0
                             </span>
                             <h5>
                                 LOREM İPSUM
@@ -312,30 +312,32 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class=" col-lg-4">
                         <div class="number-item">
-                            <span>
-                                142
+                            <span data-count="142" class="number">
+                                0
                             </span>
                             <h5>
                                 LOREM İPSUM
                             </h5>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
                                 has been the industry's standard dummy text
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="number-item">
-                            <span>
-                                59
+                            <span data-count="59" class="number">
+                                10
                             </span>
                             <h5>
                                 LOREM İPSUM
                             </h5>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
                                 has been the industry's standard dummy text
                             </p>
                         </div>
@@ -523,8 +525,8 @@
     </main>
     <!-- Main End -->
 
-     <!-- Footer Start -->
-     <footer id="footer">
+    <!-- Footer Start -->
+    <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -579,7 +581,46 @@
 
     <!-- Swiper slide cdn -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Scrool Reveal cfn -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Jguery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
+        var options = {
+            useEasing: true,
+            useGrouping: true,
+            separator: ',',
+            decimal: '.',
+        };
+
+        function countStart() {
+            $(document).ready(function () {
+                $(".number").each(function () {
+                    var count = $(this);
+                    var countTo = count.attr('data-count');
+                    $({
+                        countNum: count.text()
+                    }).animate({
+                        countNum: countTo,
+                    }, {
+
+                        duration: 7000,
+                        easing: 'linear',
+                        step: function () {
+                            count.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            count.text(this.countNum);
+                        }
+                    });
+                });
+            });
+        }
+
+        ScrollReveal().reveal('#number', {
+            beforeReveal: countStart
+        });
+
         const nextBtn = document.querySelector(".next");
         const prevBtn = document.querySelector(".prev");
         const slide = document.querySelectorAll(".slide-img");
