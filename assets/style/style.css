@@ -30,6 +30,25 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+#myBtn {
+  visibility: hidden;
+  position: fixed;
+  bottom: 35px;
+  right: 15px;
+  z-index: 99;
+  font-size: 15px;
+  outline: none;
+  background: #3E4F69;
+  color: #fff;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+#myBtn i {
+  font-size: 30px;
+}
+
 .mobil {
   position: absolute;
   top: 0;
