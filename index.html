@@ -389,23 +389,34 @@
                     </div>
                 </div>
                 <div class="row row2">
-                    <ul class="logo">
-                        <li>
-                            <img src="./assets/images/pngwing 1.png" alt="">
-                        </li>
-                        <li>
-                            <img src="./assets/images/pngwing 2.png" alt="">
-                        </li>
-                        <li>
-                            <img src="./assets/images/pngwing 3.png" alt="">
-                        </li>
-                        <li>
-                            <img src="./assets/images/pngwing 4.png" alt="">
-                        </li>
-                        <li>
-                            <img src="./assets/images/pngwing 5.png" alt="">
-                        </li>
-                    </ul>
+                    <div class="swiper portnyor">
+                        <div class="swiper-wrapper d-flex justify-content-between">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/pngwing 1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/pngwing 2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/pngwing 3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/pngwing 4.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/pngwing 5.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/pngwing 3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/pngwing 4.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/pngwing 5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -590,6 +601,24 @@
     <!-- Jguery cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
+
+        var swiper4 = new Swiper(".portnyor", {
+            breakpoints: {
+                340: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 80,
+                },
+            },
+        });
+
         var options = {
             useEasing: true,
             useGrouping: true,
@@ -685,7 +714,7 @@
             },
         });
 
-        var swiper2 = new Swiper(".mySwiper3", {
+        var swiper3 = new Swiper(".mySwiper3", {
             slidesPerView: 3,
             freeMode: true,
             pagination: {

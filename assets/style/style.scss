@@ -1899,6 +1899,19 @@ main {
                     justify-content: space-between;
 
                 }
+
+                .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 130px;
+                        object-fit: contain;
+                    }
+                }
             }
         }
     }
@@ -2133,13 +2146,24 @@ main {
 
     #logo-area {
         background: #28364B;
-        padding: 0 135px;
+        padding: 42px 135px;
 
         .logo {
             margin: 0;
             display: flex;
             justify-content: space-between;
             padding: 32px 0;
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 200px;
+                object-fit: contain;
+                height: 140px;
+            }
         }
     }
 
@@ -2631,6 +2655,7 @@ footer {
 // Responsive
 
 @media only screen and (max-width:1440px) {
+
     #header {
         .container {
             .row-2 {
@@ -2794,6 +2819,10 @@ footer {
                 padding-left: 90px;
                 padding-right: 90px;
             }
+        }
+
+        #logo-area {
+            padding: 42px 10px;
         }
     }
 }
@@ -3074,6 +3103,19 @@ footer {
     }
 
     main {
+        #logo-area {
+            padding: 20px 0;
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 150px;
+                }
+            }
+        }
+
         #blogs {
             .container {
                 .row {
@@ -3946,6 +3988,19 @@ footer {
                             i {
                                 font-size: 70px;
                             }
+                        }
+                    }
+                }
+
+                .row2 {
+                    .swiper-slide {
+                        display: flex;
+                        align-items: center;
+                        height: fit-content;
+
+                        img {
+                            width: 150px;
+                            height: 150px;
                         }
                     }
                 }

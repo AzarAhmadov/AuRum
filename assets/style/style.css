@@ -1556,6 +1556,18 @@ main #video .container .row2 .logo {
   display: flex;
   justify-content: space-between;
 }
+main #video .container .row2 .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+main #video .container .row2 .swiper-slide img {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 main #blog {
   padding-top: 60px;
   background: #f5f2e7;
@@ -1741,13 +1753,23 @@ main #certificate .container .row .col-lg-3 .ser-item .ser-img {
 }
 main #logo-area {
   background: #28364B;
-  padding: 0 135px;
+  padding: 42px 135px;
 }
 main #logo-area .logo {
   margin: 0;
   display: flex;
   justify-content: space-between;
   padding: 32px 0;
+}
+main #logo-area .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+main #logo-area .swiper-slide img {
+  width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 140px;
 }
 main #work {
   padding: 60px 0;
@@ -2243,6 +2265,9 @@ footer .container .row .col-lg-2 ul li a {
     padding-left: 90px;
     padding-right: 90px;
   }
+  main #logo-area {
+    padding: 42px 10px;
+  }
 }
 @media only screen and (max-width: 1211px) {
   #banner {
@@ -2382,6 +2407,16 @@ footer .container .row .col-lg-2 ul li a {
     -o-object-position: center center;
        object-position: center center;
     height: 100%;
+  }
+  main #logo-area {
+    padding: 20px 0;
+  }
+  main #logo-area .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  main #logo-area .swiper-slide img {
+    width: 150px;
   }
   main #blogs .container .row .col-lg-3 .blog-item {
     text-align: center;
@@ -2920,6 +2955,16 @@ footer .container .row .col-lg-2 ul li a {
   }
   main #video .container .row .col-lg-6 .ship i {
     font-size: 70px;
+  }
+  main #video .container .row2 .swiper-slide {
+    display: flex;
+    align-items: center;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main #video .container .row2 .swiper-slide img {
+    width: 150px;
+    height: 150px;
   }
   main #why {
     padding-top: 30px;
