@@ -243,12 +243,11 @@ body {
 }
 #header .container .row-2 nav ul li a.link-1.active {
   color: #CEBD88;
-  transition: 400ms all;
 }
 #header .container .row-2 nav ul li a.link-1.active::after {
   width: 135px;
   background: #CEBD88;
-  height: 3px;
+  height: 2px;
   position: absolute;
   bottom: 0;
   content: "";
